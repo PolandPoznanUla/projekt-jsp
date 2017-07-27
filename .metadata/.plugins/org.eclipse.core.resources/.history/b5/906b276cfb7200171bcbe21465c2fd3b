@@ -1,0 +1,5 @@
+package ogloszenia.model;
+
+public class User {
+
+}

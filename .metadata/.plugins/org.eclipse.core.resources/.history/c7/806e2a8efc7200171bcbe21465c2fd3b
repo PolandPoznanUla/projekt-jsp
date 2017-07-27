@@ -1,0 +1,30 @@
+package ogloszenia.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+
+@Entity
+public class User {
+
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
+@Column(unique=true)
+Integer id;
+
+@Column(nullable=false, unique=true)
+String nick;
+
+@Column(nullable=false)
+String password;
+
+@Lob
+byte[] avatar;
+
+@Column(nullable=false)
+String cityName;
+	
+}
