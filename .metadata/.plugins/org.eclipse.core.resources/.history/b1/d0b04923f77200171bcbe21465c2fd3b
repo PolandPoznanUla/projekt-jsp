@@ -1,0 +1,33 @@
+package ogloszenia.model;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Ogloszenie {
+	
+	@Id
+	Integer id;
+	String title;
+	String owner;
+	BigDecimal price;
+	String text;
+	Integer dateForm;
+	Integer datoTo;
+	Boolean isActive;
+	Boolean isPremium;
+	String cityName;
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	
+
+}
